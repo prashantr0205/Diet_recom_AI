@@ -7,10 +7,11 @@ import re
 
 import os
 import re
-os.environ['OPENAI_API_KEY'] = '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' # your openai key
+os.environ['OPENAI_API_KEY'] = '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' # your openai key
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
+
 
 llm_resto = OpenAI(temperature=0.6)
 prompt_template_resto = PromptTemplate(
